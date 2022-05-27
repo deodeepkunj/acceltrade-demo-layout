@@ -1,0 +1,41 @@
+.footer-link a {
+  color: #828f99 !important;
+  line-height: 38px;
+  font-size: 15px;
+  transition: all .5s;
+}
+.list-inline, .list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline-item:not(:last-child) {
+  margin-right: .5rem;
+}
+.list-inline-item {
+  display: inline-block;
+}
+.text-reset {
+  color: inherit !important;
+}
+.mdi-facebook::before {
+  content: "\F20C";
+}
+.mdi-set, .mdi::before {
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: 24px;
+    line-height: 1;
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.team-social i {
+  width: 38px;
+  height: 38px;
+  background-color: #f0f9fa;
+  border-radius: 50%;
+  border: 2px solid #dbf1f1;
+  font-size: 16px;
+}
