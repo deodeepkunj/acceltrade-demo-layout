@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import "../assets/css/scss/footer.scss";
 
-import ContactUs from '../pages/ContactUs';
 
 
 class Footer extends Component {

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import "../assets/css/scss/menu.scss";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
+import MenuIcon from '@material-ui/icons/Menu';
+
 
 class Header extends Component {
 
@@ -9,6 +11,7 @@ class Header extends Component {
     super(props);
     this.state = {
       isScroll: false,
+      isCollapse: false,
     }
   }
 
@@ -16,9 +19,7 @@ class Header extends Component {
   componentDidMount() {
     // window.addEventListener('scroll', this.unsetSearch);
     window.addEventListener('scroll', (e) => {
-      const nav = document.querySelector('.nav');
       if (window.pageYOffset > 0) {
-        console.log(true)
         this.setState({ isScroll: true });
       } else {
         this.setState({ isScroll: false });
@@ -31,6 +32,10 @@ class Header extends Component {
     console.log("scrolling works...")
   }
   render() {
+    console.log("state", this.state)
+    let url = window.location.href;
+    const myArray = url.split("/");
+    let page = myArray[3];
     return (
       <>
         <nav id="navbar" className={` ${this.state.isScroll === true ? "nav-sticky" : ""} navbar-custom sticky sticky-dark navbar navbar-expand-lg fixed-top`}
@@ -39,29 +44,43 @@ class Header extends Component {
             <a href="/" className="navbar-brand logo text-uppercase navbar-brand">
               <img src="../../image/acceltrade.png" alt="" height="50" />
             </a>
-            <button aria-label="Toggle navigation" type="button" className="navbar-toggler">
-              <i className="mdi mdi-menu"></i>
+            <button aria-label="Toggle navigation" type="button" className="navbar-toggler" onClick={() => {
+              this.state.isCollapse === true ?   this.setState({isCollapse: false }) : this.setState({isCollapse: true })
+            
+            }}>
+              <MenuIcon />
             </button>
-            <div id="navbarCollapse" className=" navbar-collapse collapse">
+            <div id="navbarCollapse" className={`navbar-collapse collapse ${this.state.isCollapse === true ? "show" : ""}`}>
               <div data-nav="list" className="navbar-collapse">
                 <ul id="navbar-navlist" className="navbar-nav ml-auto navbar-center nav">
-                  <li className="active nav-item">
-                    <Link activeClass="active" smooth spy to="home" className="nav-link cursor">Home</Link>
-                  </li>
+                  {page !== "contactus" ? (
+                    <>
+                      <li className="active nav-item">
+                        <Link activeClass="active" smooth spy to="home" className="nav-link cursor">Home</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link activeClass="active" smooth spy to="aboutus" className="nav-link cursor">About</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link activeClass="active" smooth spy to="carrer" className="nav-link cursor">Careers</Link>
+                      </li>
+                    </>
+                  ) : (
+                    <>
+                      <li className="nav-item">
+                        <NavLink to="/" className="nav-link cursor">Home</NavLink>
+                      </li>
+                      <li className="nav-item">
+                        <NavLink to="/" className="nav-link cursor">About</NavLink>
+                      </li>
+                      <li className="nav-item">
+                        <NavLink to="/" className="nav-link cursor">Careers</NavLink>
+                      </li>
+                    </>
+                  )}
+
                   <li className="nav-item">
-                    <Link activeClass="active" smooth spy to="aboutus" className="nav-link cursor">About</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link activeClass="active" smooth spy to="carrer" className="nav-link cursor">Careers</Link>
-                  </li>
-                  <li className="nav-item">
-                    {/* <Link to="/contactus" className="nav-link cursor">Contact</Link> */}
-                    <NavLink
-                      to="/contactus"
-                      className="nav-link cursor"
-                    >
-                      Contact
-                    </NavLink>
+                    <NavLink to="/contactus" className="nav-link cursor">Contact</NavLink>
                   </li>
                 </ul>
               </div>

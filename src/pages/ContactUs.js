@@ -44,7 +44,7 @@ class ContactUs extends Component {
 
                   Bangalore, Karnataka, India - 560066
                   <br />
-                  <b>Phone: </b><img src="https://www.acceletrade.com/img/bangalore_phone.png" width="250" />
+                  <b>Phone: </b><img src="https://www.acceletrade.com/img/bangalore_phone.png" alt="phone" width="250" />
                 </p>
               </div>
               <div className="col-sm-6">
@@ -56,7 +56,7 @@ class ContactUs extends Component {
                   #08-54 T-Space
                   Singapore 528559
                   <br />
-                  <b>Tel: </b><img src="https://www.acceletrade.com/img/singapore_phone.png" width="110" />
+                  <b>Tel: </b><img src="https://www.acceletrade.com/img/singapore_phone.png" alt="tel" width="110" />
                 </p>
               </div>
             </div>

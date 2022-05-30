@@ -33,7 +33,9 @@ body, h1, h2, h3, h4, h5, h6 {
 p {
   line-height: 1.7;
 }
-
+.home-content .home-title {
+  font-size: 45px;
+}
 //Button
 .btn-primary {
   background: #1ea59a !important;
@@ -191,4 +193,11 @@ p {
 }
 .bg-light {
   background-color: #f0f9fa !important;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
