@@ -34,9 +34,9 @@ class ContactUs extends Component {
               <div className="col-sm-6">
                 <h4>Corporate Office</h4>
                 <p className='text-custom-muted'>
-                  <strong>SigmaQuant Technologies Private Limited</strong>
-                  <br />
-                  <strong>Acceletrade Technologies Private Limited</strong>
+                  {/* <strong>SigmaQuant Technologies Private Limited</strong> */}
+                  {/* <br /> */}
+                  <strong>Arkastra Technologies Private Limited</strong>
                   <br />
                   A-301,UKn Miraya Rose
 
@@ -44,21 +44,21 @@ class ContactUs extends Component {
 
                   Bangalore, Karnataka, India - 560066
                   <br />
-                  <b>Phone: </b><img src="https://www.acceletrade.com/img/bangalore_phone.png" width="250" />
+                  <b>Phone: </b><img src="https://www.Acceletrade.com/img/bangalore_phone.png" width="250" />
                 </p>
               </div>
-              <div className="col-sm-6">
+              {/* <div className="col-sm-6">
                 <h4>Singapore Office</h4>
                 <p className='text-custom-muted'>
-                  <strong>Acceletrade Technologies Pte. Ltd.</strong>
+                  <strong>Arkastra Technologies Pte. Ltd.</strong>
                   <br />
                   1 Tampines North Drive 1
                   #08-54 T-Space
                   Singapore 528559
                   <br />
-                  <b>Tel: </b><img src="https://www.acceletrade.com/img/singapore_phone.png" width="110" />
+                  <b>Tel: </b><img src="https://www.Arkastra.com/img/singapore_phone.png" width="110" />
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

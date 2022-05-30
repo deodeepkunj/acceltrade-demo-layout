@@ -55,7 +55,7 @@ class Footer extends Component {
           <div className="row">
             <div className="col-lg-12">
               <div className="text-center">
-                <p className="text-custom-muted mb-0">Copyright  © Acceletrade Technologies Private Limited 2017</p>
+                <p className="text-custom-muted mb-0">Copyright  © Arkastra Technologies Private Limited 2017</p>
               </div>
             </div>
           </div>

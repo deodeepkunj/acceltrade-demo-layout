@@ -43,7 +43,7 @@ class Home extends Component {
               <div className="col-lg-12">
                 <div className="title-box text-center">
                   <h3 className="title-heading mt-4">About Us </h3>
-                  <p className="text-custom-muted f-17 mt-3">Acceletrade Technologies Pvt. Ltd. was founded in 2011 to build high-performance technology for trading in Indian financial markets. The founders combined this innovative technology with insightful quantitative research to begin algorithmic trading in India.</p>
+                  <p className="text-custom-muted f-17 mt-3">Arkastra Technologies Pvt. Ltd. was founded in 2011 to build high-performance technology for trading in Indian financial markets. The founders combined this innovative technology with insightful quantitative research to begin algorithmic trading in India.</p>
                 </div>
               </div>
             </div>
@@ -52,10 +52,10 @@ class Home extends Component {
                 <div className="pr-4 mt-4">
                   <p className="text-uppercase">why choose us </p>
                   <h3>Let’s make a better business</h3>
-                  <p className="text-custom-muted mt-3">Acceletrade has grown over the past 5 years into a brilliant and diverse team of more than 50 people. Today, the firm trades significant volumes in the Indian cash and derivatives markets. A cornerstone of the firm’s success has been its dedication to robust, thorough processes and sophisticated risk management systems to manage all aspects of the business.</p>
+                  <p className="text-custom-muted mt-3">Arkastra has grown over the past 5 years into a brilliant and diverse team of more than 50 people. Today, the firm trades significant volumes in the Indian cash and derivatives markets. A cornerstone of the firm’s success has been its dedication to robust, thorough processes and sophisticated risk management systems to manage all aspects of the business.</p>
                   <div className="mt-4 pt-1">
                     <p className="text-custom-muted mt-3">
-                      The firm is currently expanding to the US and to Europe. As it pursues new markets and opportunities, the firm is looking to hire smart and talented people to join its dynamic and dedicated team of professionals. Acceletrade fosters a culture of collaboration and meritocracy, which emphasizes teamwork and performance rather than tenure or title.
+                      The firm is currently expanding to the US and to Europe. As it pursues new markets and opportunities, the firm is looking to hire smart and talented people to join its dynamic and dedicated team of professionals. Arkastra fosters a culture of collaboration and meritocracy, which emphasizes teamwork and performance rather than tenure or title.
                     </p>
                   </div>
                 </div>
@@ -105,10 +105,12 @@ class Home extends Component {
             <div className="align-items-center row">
               <div className="col-lg-12">
                 <div className="mt-4">
-                  <h2>Carrers At <img src="../../image/acceltrade.png" alt="" height="50" /></h2>
-                  <p className="mt-4 text-custom-muted">We are always looking for people who can bring new ideas, insights and experience to our work, helping us to grow and stay ahead of the curve. An opportunity at Acceletrade offers the best of both worlds - a chance to work with smart, dedicated and experienced professionals while enjoying a small, flat, collaborative environment where progress is not hampered by hierarchy or bureaucracy.</p>
+                  <h2>Carrers At Arkastra
+                    {/* <img src="../../image/acceltrade.png" alt="" height="50" /> */}
+                    </h2>
+                  <p className="mt-4 text-custom-muted">We are always looking for people who can bring new ideas, insights and experience to our work, helping us to grow and stay ahead of the curve. An opportunity at Arkastra offers the best of both worlds - a chance to work with smart, dedicated and experienced professionals while enjoying a small, flat, collaborative environment where progress is not hampered by hierarchy or bureaucracy.</p>
                   <p className="mt-4 text-custom-muted">
-                  We have a number of openings for experienced professionals, as well as new graduates or individuals with advanced degrees. If you would like to apply for an opportunity at Acceletrade, please send your resume and cover letter to info@acceletrade.com .
+                  We have a number of openings for experienced professionals, as well as new graduates or individuals with advanced degrees. If you would like to apply for an opportunity at Arkastra, please send your resume and cover letter to info@Arkastra.com .
                   </p>            
                   <p className="mt-4 text-custom-muted">Upon receiving your application, we will review your credentials and if you seem to be a good fit, we will schedule one or two phone interviews. If the conversations reveals a mutual interest, we would then arrange for in-person interviews at one of our office locations.</p>
                 </div>
