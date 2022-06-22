@@ -14,10 +14,13 @@
     "mdi-react": "^8.4.0",
     "npm": "^8.10.0",
     "react": "^18.1.0",
+    "react-device-detect": "^2.2.2",
     "react-dom": "^18.1.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^5.1.2",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.7",
+    "react-simple-image-slider": "^2.4.1",
     "reactstrap": "^9.0.2",
     "sass": "^1.52.1",
     "web-vitals": "^2.1.4"

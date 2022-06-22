@@ -3,6 +3,9 @@ import "../assets/css/scss/menu.scss";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import MenuIcon from '@material-ui/icons/Menu';
+import HighlightOffIcon from '@material-ui/icons/HighlightOff';
+import TextField from '@material-ui/core/TextField';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class Header extends Component {
 
@@ -11,7 +14,15 @@ class Header extends Component {
     this.state = {
       isScroll: false,
       isCollapse: false,
-    }
+      modal: false
+    };
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    this.setState({
+      modal: !this.state.modal
+    });
   }
 
 
@@ -35,7 +46,7 @@ class Header extends Component {
         >
           <div className="container">
             <a href="/" className="navbar-brand logo text-uppercase navbar-brand">
-              <img src="../../image/logo.jpeg" alt="" height="50" />
+              <img src="../../image/logo2.png" alt="" height="70" />
             </a>
             <button aria-label="Toggle navigation" type="button" className="navbar-toggler"
               onClick={() => {
@@ -85,11 +96,36 @@ class Header extends Component {
               </div>
               <ul className="navbar-nav navbar-center">
                 <li className="nav-item">
-                  <a className="nav-link" href="/Login">Log In</a>
+                  {/* <NavLink className="nav-link" href="/Login">Log In</NavLink> */}
+                  {/* <Button className="nav-link btn btn-default" onClick={this.toggle}>Log In</Button> */}
                 </li>
               </ul>
             </div>
           </div>
+          <Modal isOpen={this.state.modal} toggle={this.toggle} className="" style={{ borderRadius: "0.8rem" }}>
+            <div className="text-right py-3 px-3">
+              <HighlightOffIcon onClick={this.toggle} className="cursor" />
+            </div>
+            <ModalBody>
+              <div className="col-md-12 text-center">
+                <img src="../../image/arkastra.png" alt="" height="160" />
+              </div>
+              {/* <div className="col-md-12 mt-3 text-center">
+                <TextField
+                  label="Email"
+                  id="outlined-margin-dense"
+                  defaultValue=""
+                  margin="dense"
+                  variant="outlined"
+                  style={{
+                    // marginLeft: theme.spacing(1),
+                    // marginRight: theme.spacing(1),
+                    width: '30ch',
+                  }}
+                />
+              </div> */}
+            </ModalBody>
+          </Modal>
         </nav>
       </>
     )

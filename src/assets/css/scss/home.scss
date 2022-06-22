@@ -11,6 +11,7 @@ h6 {
   line-height: 1.5;
   color: #212529;
   text-align: left;
+  width: 100% !important;
 }
 
 .bg-home {
@@ -35,7 +36,12 @@ h6 {
 }
 
 .home-content .home-title {
-  font-size: 45px;
+  font-size: 56px;
+  font-family: 'Hind Guntur', sans-serif !important;
+}
+
+.custom-font {
+  font-family: 'Hind Guntur', sans-serif !important;
 }
 
 .f-20 {
@@ -234,8 +240,53 @@ button:focus {
   background-color: #f0f9fa !important;
 }
 
+.padding-top {
+  padding-top: 80px;
+  // position: absolute;
+  // z-index: 1;
+}
+
+.tp-parallax-wrap {
+  position: absolute !important;
+  display: block;
+  visibility: visible;
+  left: 128px;
+  top: 204px;
+  z-index: 5;
+}
+h3 small {
+  font-size: 65% !important;
+  color: #777;
+}
+.custom-link {
+  color: #9b59b6;
+  transition: opacity .35s;
+}
+
+.carouel-image{
+  min-height: 650px;
+  max-height: 650px;
+}
+
 @media (min-width: 200px) and (max-width: 992px) {
   .home-img .animation-1 {
     right: 0;
   }
+
+  .padding-top {
+    padding-top: 110px !important;
+  }
+  .carouel-image{
+    min-height: 150px;
+    max-height: 150px;
+  }
+
+
+  .about-us-img {
+    height: 230px;
+  }
+  .tp-parallax-wrap {
+    display: none;
+  }
+
 }
